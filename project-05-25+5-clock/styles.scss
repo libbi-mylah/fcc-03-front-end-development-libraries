@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa&display=swap");
+
+$wine: #490009;
+$crimson: #ac0e28;
+$dark-blue: #010a1c;
+$deep-blue: #013766;
+$cobalt: #1b78af;
+$tan: #d2b48c;
+$white: #ffffff;
+
+body {
+  font-family: Audiowide;
+  background-color: $wine;
+}
+#clock {
+  width: 750px;
+  text-align: center;
+  margin: 50px auto;
+  background-color: $crimson;
+  border: 2px $crimson;
+  border-style: inset;
+  padding: none;
+}
+#h1 {
+  color: $tan;
+  font-size: 50px;
+  border-bottom: 4px double $wine;
+  width: 751px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+button {
+  font-family: Audiowide;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+}
+#session-increment,
+#break-increment {
+  font-family: Audiowide;
+  font-size: 20px;
+  color: $tan;
+  background-image: radial-gradient($cobalt, $deep-blue);
+  background-color: $deep-blue;
+}
+#session-increment:hover,
+#break-increment:hover {
+  font-family: Audiowide;
+  font-size: 20px;
+  color: $tan;
+  background-image: radial-gradient($cobalt, $dark-blue);
+  background-color: $dark-blue;
+}
+#session-decrement,
+#break-decrement {
+  font-family: Audiowide;
+  color: $tan;
+  font-size: 20px;
+  background-image: radial-gradient($crimson, $wine);
+  background-color: $crimson;
+}
+#session-decrement:hover,
+#break-decrement:hover {
+  font-family: Audiowide;
+  color: $tan;
+  font-size: 20px;
+  background-image: radial-gradient($crimson, #220000);
+  background-color: $crimson;
+}
+#session,
+#break {
+  background-image: radial-gradient($white, $tan);
+  background-color: $tan;
+  color: $wine;
+  display: inline-block;
+  width: 200px;
+  border: 2px solid $deep-blue;
+  margin: 20px;
+  padding: 10px;
+}
+#break-label,
+#session-label,
+#timer-label {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+#break-decrement,
+#break-length,
+#break-increment,
+#session-decrement,
+#session-length,
+#session-increment {
+  display: inline-block;
+  width: 50px;
+}
+#timer {
+  background-color: $wine;
+  background-image: radial-gradient($crimson, $wine);
+  color: $white;
+  text-transform: uppercase;
+  font-size: 50px;
+  border: 2px $wine;
+  border-style: inset;
+  border-radius: 5px;
+  width: 200px;
+  height: 100px;
+  margin: 10px auto;
+  padding: 15px;
+}
+#start_stop,
+#reset {
+  margin: 10px;
+}
+#start_stop {
+  background-image: radial-gradient($cobalt, $deep-blue);
+  background-color: $deep-blue;
+  color: $tan;
+}
+#start_stop:hover {
+  background-image: radial-gradient($cobalt, $dark-blue);
+  background-color: $cobalt;
+  color: $tan;
+}
+#reset {
+  background-image: radial-gradient($white, $tan);
+  background-color: $tan;
+  color: $deep-blue;
+}
+#reset:hover {
+  background-image: radial-gradient($white, #987554);
+  background-color: $tan;
+  color: $deep-blue;
+}
+#footer {
+  font-family: Comfortaa;
+  color: $wine;
+  text-align: center;
+  width: 752px;
+  border-top: 4px double $wine;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+a {
+  color: $tan;
+  text-decoration: none;
+}
+a:hover {
+  color: $white;
+  text-decoration: none;
+}
