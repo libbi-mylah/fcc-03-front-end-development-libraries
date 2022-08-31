@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Glegoo&display=swap");
+
+:root {
+  --dark-brown: #3c3229;
+  --brown: #6a5c54;
+  --red-brown: #733722;
+  --l-red: #fc5f6a;
+  --red: #e7242d;
+  --dark-tan: #c19a6b;
+  --tan: #d2b48c;
+}
+
+body {
+  background-color: var(--dark-brown);
+  margin-top: -50px;
+}
+.calculator {
+  font-family: Glegoo, sans-serif;
+  text-rendering: geometricPrecision;
+  width: 300px;
+  background: var(--brown);
+  background-image: radial-gradient(
+    var(--dark-brown),
+    var(--brown),
+    var(--dark-brown)
+  );
+  margin: 100px auto 0 auto;
+  border: 2px solid var(--brown);
+  border-radius: 5px;
+  padding: 30px;
+}
+.display {
+  font-family: Gleloo, sans-serif;
+  color: var(--tan);
+  background: var(--dark-brown);
+  font-size: 35px;
+  padding: 10px;
+  text-align: right;
+  border-radius: 2px;
+  box-shadow: inset 0 5px 8px var(--dark-brown), 0 1px 0 var(--brown);
+}
+.header {
+  font-family: Glegoo, serif;
+  letter-spacing: 2px;
+  color: var(--l-red);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: -15px;
+  padding-bottom: 8px;
+  text-align: center;
+  text-shadow: 0 1px 1px var(--brown);
+  user-select: none;
+}
+.display-main {
+  height: 40px;
+}
+.display-indicate {
+  font-size: 10px;
+  color: var(--l-red);
+  text-align: left;
+  margin: -5px 0 -2px -5px;
+  text-transform: uppercase;
+  user-select: none;
+  transition: color 0.1s ease-in;
+}
+.max {
+  color: var(--l-red);
+}
+.display-operations {
+  font-size: 15px;
+  color: var(--l-red);
+  border-top: 1px solid var(--brown);
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.row {
+  margin-left: -10px;
+  margin-top: 10px;
+}
+.row:after,
+.bottom-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.left,
+.right {
+  float: left;
+}
+.button {
+  position: relative;
+  top: 0;
+  height: 65px;
+  color: var(--dark-brown);
+  font-size: 30px;
+  font-family: Alumni Sans Pinstripe, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 9px 0 11px 0;
+  border-radius: 2px;
+  float: left;
+  width: 65px;
+  background: var(--tan);
+  margin-left: 12px;
+  text-transform: uppercase;
+  border: 0;
+  box-shadow: 0 1px 1px var(--red-brown), inset 0 1px 0 var(--brown);
+  transition: all 0.1s;
+  cursor: pointer;
+  user-select: none;
+}
+.button:hover {
+  box-shadow: 0 2px 6px var(--red-brown), inset 0 1px 0 var(--brown);
+  background: var(--dark-tan);
+  color: var(--dark-brown);
+}
+.button:active {
+  top: 1px;
+  box-shadow: 0 0 2px var(--red-brown), inset 0 1px 0 var(--brown);
+}
+.button:focus {
+  outline: 0;
+}
+.ac,
+.ce {
+  background: var(--l-red);
+}
+.ac:hover,
+.ce:hover {
+  background: var(--red);
+  box-shadow: 0 0 2px var(--l-red), inset 0 1px 0 var(--brown);
+}
+.minus {
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+.zero {
+  width: 142px;
+}
+.equal {
+  height: 65px;
+  margin-top: 10px;
+  padding: 60px 0 15px 0;
+}
+.multiply {
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 11px;
+}
+.footer {
+  font-family: Glegoo, sans serif;
+  color: var(--tan);
+  height: 6px;
+  text-align: center;
+  padding-top: 10px;
+}
+a {
+  color: var(--l-red);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--red);
+}
