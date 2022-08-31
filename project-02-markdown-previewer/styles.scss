@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+$tan: rgba(210, 180, 140);
+$green: rgba(0, 70, 0);
+
+body {
+  background: rgb(0, 70, 0);
+  font-family: Georgia, serif;
+}
+#wrapper {
+  padding: 10px;
+  color: black;
+  border-top: 5px double $tan;
+}
+#leftPanel,
+#rightPanel {
+  font-family: Lato, sans-serif;
+  height: 100vh;
+  background-color: $tan;
+  overflow: auto;
+  border: 5px double $green;
+}
+.panelTitle {
+  font-family: Georgia, serif;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px double $green;
+}
+textarea {
+  font-family: Lato, sans-serif;
+  min-height: 100vh;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 2rem !important;
+}
+h2 {
+  font-family: Georgia, serif;
+  font-size: 1.5rem !important;
+}
+h3 {
+  font-family: Georgia, serif;
+  font-size: 1.3rem !important;
+}
+blockquote {
+  font-family: Lato, sans-serif;
+  border-left: 2px solid $green;
+  color: $green;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+pre {
+  font-family: Georgia, serif;
+  background: white;
+  padding: 5px 0 5px 5px;
+}
+code {
+  font-family: Georgia, serif;
+  background: white;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+img {
+  padding-top: 10px;
+  border-top: 4px double $green;
+  width: 200px;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: $tan;
+  border: 1px solid $green;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $green;
+  border: 2px groove $tan;
+}
