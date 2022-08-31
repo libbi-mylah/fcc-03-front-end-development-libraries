@@ -5,3 +5,4 @@ This repo contains the code that I wrote for the projects that I had to complete
 ## Projects
 
 1. [Random Quote Generator](https://github.com/libbi-mylah/fcc-03-front-end-development-libraries/tree/main/project-01-random-quote-generator/project-01-random-quote-generator)
+2. [Markdown Previewer](https://github.com/libbi-mylah/fcc-03-front-end-development-libraries/tree/main/project-02-markdown-previewer)
